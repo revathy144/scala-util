@@ -1,29 +1,29 @@
 /**
- * Licensed to Metamarkets Group Inc. (Metamarkets) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  Metamarkets licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+  * Licensed to Metamarkets Group Inc. (Metamarkets) under one
+  * or more contributor license agreements.  See the NOTICE file
+  * distributed with this work for additional information
+  * regarding copyright ownership.  Metamarkets licenses this file
+  * to you under the Apache License, Version 2.0 (the
+  * "License"); you may not use this file except in compliance
+  * with the License.  You may obtain a copy of the License at
+  *
+  *   http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing,
+  * software distributed under the License is distributed on an
+  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  * KIND, either express or implied.  See the License for the
+  * specific language governing permissions and limitations
+  * under the License.
+  */
 
 organization := "com.metamx"
 
 name := "scala-util"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
-crossScalaVersions := Seq("2.10.5", "2.11.7")
+crossScalaVersions := Seq("2.10.6", "2.11.8")
 
 lazy val root = project.in(file("."))
 
@@ -60,7 +60,7 @@ releaseSettings
 
 ReleaseKeys.publishArtifactsAction := PgpKeys.publishSigned.value
 
-val jacksonFasterxmlVersion = "2.6.0"
+val jacksonFasterxmlVersion = "2.6.7"
 val curatorVersion = "2.10.0"
 val zookeeperVersion = "3.4.8"
 val twittersVersion = "6.31.0"
@@ -71,19 +71,19 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.metamx" % "java-util" % "0.27.4" force(),
-  "com.metamx" % "http-client" % "1.0.3" force(),
-  "com.metamx" % "emitter" % "0.3.3" force(),
-  "com.metamx" % "server-metrics" % "0.2.8" force()
+  "com.metamx" % "java-util" % "0.27.9" force(),
+  "com.metamx" % "http-client" % "1.0.4" force(),
+  "com.metamx" % "emitter" % "0.3.6" force(),
+  "com.metamx" % "server-metrics" % "0.2.9" force()
 )
 
 libraryDependencies ++= Seq(
-  "org.slf4j" % "slf4j-api" % "1.7.2" force(),
+  "org.slf4j" % "slf4j-api" % "1.7.12" force(),
   "commons-lang" % "commons-lang" % "2.6" force(),
-  "joda-time" % "joda-time" % "2.1" force(),
-  "org.joda" % "joda-convert" % "1.6" force(),
-  "org.scalaj" %% "scalaj-time" % "0.5" force(),
-  "org.skife.config" % "config-magic" % "0.9" force(),
+  "joda-time" % "joda-time" % "2.9.4" force(),
+  "org.joda" % "joda-convert" % "1.8.1" force(),
+  "org.scalaj" %% "scalaj-time" % "0.8" force(),
+  "org.skife.config" % "config-magic" % "0.17" force(),
   "com.google.guava" % "guava" % "16.0.1" force(),
   "org.yaml" % "snakeyaml" % "1.11" force()
 )
@@ -126,7 +126,7 @@ libraryDependencies ++= Seq(
 //
 
 libraryDependencies ++= Seq(
-  "org.slf4j" % "slf4j-simple" % "1.7.2" % "test" force(),
+  "org.slf4j" % "slf4j-simple" % "1.7.12" % "test" force(),
   "junit" % "junit" % "4.11" % "test" force(),
   "org.mockito" % "mockito-core" % "1.9.5" % "test" force()
 )
