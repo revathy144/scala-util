@@ -71,9 +71,9 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.metamx" % "java-util" % "0.27.4" force(),
-  "com.metamx" % "http-client" % "1.0.3" force(),
-  "com.metamx" % "emitter" % "0.3.3" force(),
+  "com.metamx" % "java-util" % "0.27.11" force(),
+  "com.metamx" % "http-client" % "1.0.5" force(),
+  "com.metamx" % "emitter" % "0.3.6" force(),
   "com.metamx" % "server-metrics" % "0.2.10" force()
 )
 
