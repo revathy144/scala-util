@@ -63,7 +63,7 @@ ReleaseKeys.publishArtifactsAction := PgpKeys.publishSigned.value
 val jacksonFasterxmlVersion = "2.6.6"
 val curatorVersion = "2.10.0"
 val zookeeperVersion = "3.4.8"
-val twittersVersion = "6.31.0"
+val twittersVersion = "6.35.0"
 val twitterUtilsVersion = "6.30.0"
 
 libraryDependencies ++= Seq(
